@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Contact Us | Truck Loader</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        
+        <!--Header open-->
+    <header>
+    <ul>
+        <a href="index.html">
+            <li class="option">Home</li>
+        </a>
+        <a href="about.html">
+            <li class="option">About Us</li>
+        </a>
+        <a href="booktruck.html">
+            <li class="option">Book Truck</li>
+        </a>
+        <a href="contact.html">
+            <li class="option">Contact Us</li>
+        </a>
+        <a href="login.html">
+            <li class="option">Login</li>
+        </a>
+    </ul>
+    </header>
+        <!--Header close-->
+        
+         <!--banner open-->
+        <div class="bannerouterbooktruck">
+            <h1 class="bannertextbooktruck">Book </br> Truck Loader</h1>
+            <p class="bannertaglinebooktruck">India’s most reliable, dedicated and expert online Transport logistics services partner!</P>
+        </div>
+        <!--banner close-->
+
+<!--marquee open--> 
+<marquee width="97%" direction="left" style="padding: 20px 20px; background-color: #8B0000; color: #fff; font-weight: bold; letter-spacing: 1px;">
+"Note : Office is not enable due to covid crisis, please book Truck Online for All India Service"
+</marquee> 
+   <!--marquee close--> 
+        
+   <div style="background-color: #f2f2f2;"> 
+     <a href="index.html" style="margin-left: 35px;"><i class="fa fa-arrow-circle-left" style="font-size:48px;color:red"></i></a>
+   </div>
+   
+   <div class="container"> 
+       
+  <form action="confirmationbooktruck.html">
+      <label for="fname" style="font-weight: bold; letter-spacing: 1px;">Full Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+    <label for="email" style="font-weight: bold; letter-spacing: 1px;">Email ID</label>
+    <input type="email" id="email" name="email" placeholder="Enter Your Email.." required>
+    
+    <!-- <label for="text" style="font-weight: bold; letter-spacing: 1px;">Mobile No</label>
+    <input type="tel" id="text" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" maxlength="10" name="mobile" placeholder="Enter Your mobile.." required> -->
+    <label for="text" style="font-weight: bold; letter-spacing: 1px;">Mobile No</label>
+<input type="tel" id="text" pattern="[0-9]{10}" maxlength="10" name="mobile" placeholder="Enter Your mobile.." required>
+
+
+    <label for="country" style="font-weight: bold; letter-spacing: 1px;">Select Loading Point</label>
+    <select id="state" name="state" required>
+      <option value="">Select Load Point</option>
+      <option value="mumbai">Mumbai</option>
+      <option value="nagpur">Nagpur</option>
+      <option value="bhopal">Bhopal</option>
+      <option value="jabalpur">Jabalpur</option>
+      <option value="banglore">Banglore</option>
+      <option value="trichi">Trichi</option>
+      <option value="belgaum">Belgaum</option>
+    </select>
+    
+    <label for="country" style="font-weight: bold; letter-spacing: 1px;">Select Unload Point</label>
+    <select id="city" name="city" required>
+        <option value="">Select Unload Point</option>
+      <option value="mumbai">Mumbai</option>
+      <option value="nagpur">Nagpur</option>
+      <option value="bhopal">Bhopal</option>
+      <option value="jabalpur">Jabalpur</option>
+      <option value="banglore">Banglore</option>
+      <option value="trichi">Trichi</option>
+      <option value="belgaum">Belgaum</option>
+    </select>
+    
+   <p style="font-weight: bold; letter-spacing: 1px;">Do you Want to book Truck For Return Journey Also:</p>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">Yes</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">No</label><br><br>
+    
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" required="">
+<label for="vehicle1" style="font-weight: bold; letter-spacing: 1px;"> I have read all ther Terms & Conditions and i Agree with all the T&C of Truck Loader</label><br>
+<br><br>
+    <input type="submit" value="Submit" style="width: 100%;">
+  </form>
+</div>
+       
+        
+       
+        
+        <!--footer open-->
+        <div class="footerouter" style="margin-top: 2px;">
+            <p>Truck Loader. All Right Reserved | Design & Managed By TrukLoader</p>
+        </div>
+        <!--footer close-->
+
+        
+        
+       
+ <script>
+            var CurrentPosition = 0;
+
+function over(ev) {
+    let style = ev.srcElement
+    let OldPosition = CurrentPosition;
+    CurrentPosition = ev.clientX
+    if (OldPosition < CurrentPosition) {
+        style.classList.add("right")
+        style.classList.remove("left")
+    } else if (OldPosition > CurrentPosition) {
+        style.classList.add("left")
+        style.classList.remove("right")
+    }
+}
+function out(ev) {
+    let style = ev.srcElement
+    let OldPosition = CurrentPosition;
+    if (OldPosition < ev.clientX) {
+        style.classList.add("right")
+        style.classList.remove("left")
+    } else if (OldPosition > ev.clientX) {
+        style.classList.add("left")
+        style.classList.remove("right")
+    }
+}
+
+for (let i = 0; i < document.getElementsByTagName('li').length; i++) {
+    document.getElementsByTagName('li')[i].addEventListener("mouseover", over);
+    document.getElementsByTagName('li')[i].addEventListener("mouseout", out);
+}
+            </script>
+    </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Confirm Book | Truck Loader</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        
+        <!--Header open-->
+    <header>
+    <ul>
+        <a href="index.html">
+            <li class="option">Home</li>
+        </a>
+        <a href="about.html">
+            <li class="option">About Us</li>
+        </a>
+        <a href="booktruck.html">
+            <li class="option">Book Truck</li>
+        </a>
+        <a href="contact.html">
+            <li class="option">Contact Us</li>
+        </a>
+        <a href="login.html">
+            <li class="option">Login</li>
+        </a>
+    </ul>
+    </header>
+        <!--Header close-->
+        
+         <!--banner open-->
+        <div class="bannerouter">
+            <h1 class="bannertext">Thank You</br> Booking Confirm Successfully </h1>
+            <p class="bannertagline">Our Truck will be Reach Your Source Station On Time</P>
+        </div>
+        <!--banner close-->
+
+<!--marquee open--> 
+<marquee width="97%" direction="left" style="padding: 20px 20px; background-color: #8B0000; color: #fff; font-weight: bold; letter-spacing: 1px;">
+"Note : Office is not enable due to covid crisis, please book Truck Online for All India Service"
+</marquee> 
+   <!--marquee close--> 
+        
+        <!--footer open-->
+        <div class="footerouter" style="margin-top: 2px;">
+            <p>Truck Loader. All Right Reserved | Design & Managed By TrukLoader</p>
+        </div>
+        <!--footer close-->
+
+        
+        
+       
+ <script>
+            var CurrentPosition = 0;
+
+function over(ev) {
+    let style = ev.srcElement
+    let OldPosition = CurrentPosition;
+    CurrentPosition = ev.clientX
+    if (OldPosition < CurrentPosition) {
+        style.classList.add("right")
+        style.classList.remove("left")
+    } else if (OldPosition > CurrentPosition) {
+        style.classList.add("left")
+        style.classList.remove("right")
+    }
+}
+function out(ev) {
+    let style = ev.srcElement
+    let OldPosition = CurrentPosition;
+    if (OldPosition < ev.clientX) {
+        style.classList.add("right")
+        style.classList.remove("left")
+    } else if (OldPosition > ev.clientX) {
+        style.classList.add("left")
+        style.classList.remove("right")
+    }
+}
+
+for (let i = 0; i < document.getElementsByTagName('li').length; i++) {
+    document.getElementsByTagName('li')[i].addEventListener("mouseover", over);
+    document.getElementsByTagName('li')[i].addEventListener("mouseout", out);
+}
+            </script>
+    </body>
+</html>

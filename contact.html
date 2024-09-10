@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Contact Us | Truck Loader</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        
+        <!--Header open-->
+    <header>
+    <ul>
+        <a href="index.html">
+            <li class="option">Home</li>
+        </a>
+        <a href="about.html">
+            <li class="option">About Us</li>
+        </a>
+        <a href="booktruck.html">
+            <li class="option">Book Truck</li>
+        </a>
+        <a href="contact.html">
+            <li class="option">Contact Us</li>
+        </a>
+        <a href="login.html">
+            <li class="option">Login</li>
+        </a>
+    </ul>
+    </header>
+        <!--Header close-->
+        
+         <!--banner open-->
+        <div class="banneroutercontact">
+            <h1 class="bannertextcontact">Contact </br> Truck Loader</h1>
+            <p class="bannertaglinecontact">India’s most reliable, dedicated and expert online Transport logistics services partner!</P>
+        </div>
+        <!--banner close-->
+
+<!--marquee open--> 
+<marquee width="97%" direction="left" style="padding: 20px 20px; background-color: #8B0000; color: #fff; font-weight: bold; letter-spacing: 1px;">
+"Note : Office is not enable due to covid crisis, please book Truck Online for All India Service"
+</marquee> 
+   <!--marquee close--> 
+        
+        <div style="background-color: #f2f2f2;"> 
+     <a href="index.html" style="margin-left: 35px;"><i class="fa fa-arrow-circle-left" style="font-size:48px;color:red"></i></a>
+   </div>
+        
+   
+   <div class="container">       
+  <form action="confirmation.html">
+      <label for="fname" style="font-weight: bold; letter-spacing: 1px;">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+    <label for="lname" style="font-weight: bold; letter-spacing: 1px;">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+    <label for="country" style="font-weight: bold; letter-spacing: 1px;">State</label>
+    <select id="state" name="state" required>
+       <option value="">Select Your State</option>
+      <option value="maharashtra">Maharashtra</option>
+      <option value="karnataka">Karnataka</option>
+      <option value="madhyapradesh">Madhya Pradesh</option>
+    </select><!-- comment -->
+    <label for="country" style="font-weight: bold; letter-spacing: 1px;">City</label>
+    <select id="city" name="city" required>
+        <option value="">Select Your City</option>
+      <option value="mumbai">Mumbai</option>
+      <option value="nagpur">Nagpur</option>
+      <option value="bhopal">Bhopal</option>
+      <option value="jabalpur">Jabalpur</option>
+      <option value="banglore">Banglore</option>
+      <option value="trichi">Trichi</option>
+      <option value="belgaum">Belgaum</option>
+    </select>
+    
+    <label for="subject" style="font-weight: bold; letter-spacing: 1px;">Message</label>
+    <textarea id="subject" name="subject" placeholder="Write your message here.." style="height:100px" required></textarea>
+
+    <input type="submit" value="Submit" style="width: 100%;">
+  </form>
+</div>
+       
+        
+       
+        
+        <!--footer open-->
+        <div class="footerouter" style="margin-top: 2px;">
+            <p>Truck Loader. All Right Reserved | Design & Managed By TrukLoader</p>
+        </div>
+        <!--footer close-->
+
+        
+        
+       
+ <script>
+            var CurrentPosition = 0;
+
+function over(ev) {
+    let style = ev.srcElement
+    let OldPosition = CurrentPosition;
+    CurrentPosition = ev.clientX
+    if (OldPosition < CurrentPosition) {
+        style.classList.add("right")
+        style.classList.remove("left")
+    } else if (OldPosition > CurrentPosition) {
+        style.classList.add("left")
+        style.classList.remove("right")
+    }
+}
+function out(ev) {
+    let style = ev.srcElement
+    let OldPosition = CurrentPosition;
+    if (OldPosition < ev.clientX) {
+        style.classList.add("right")
+        style.classList.remove("left")
+    } else if (OldPosition > ev.clientX) {
+        style.classList.add("left")
+        style.classList.remove("right")
+    }
+}
+
+for (let i = 0; i < document.getElementsByTagName('li').length; i++) {
+    document.getElementsByTagName('li')[i].addEventListener("mouseover", over);
+    document.getElementsByTagName('li')[i].addEventListener("mouseout", out);
+}
+            </script>
+    </body>
+</html>

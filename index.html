@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Home | Truck Loader</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        
+        <!--Header open-->
+    <header>
+    <ul>
+        <a href="index.html">
+            <li class="option">Home</li>
+        </a>
+        <a href="about.html">
+            <li class="option">About Us</li>
+        </a>
+        <a href="booktruck.html">
+            <li class="option">Book Truck</li>
+        </a>
+        <a href="contact.html">
+            <li class="option">Contact Us</li>
+        </a>
+        <a href="login.html">
+            <li class="option">Login</li>
+        </a>
+    </ul>
+    </header>
+        <!--Header close-->
+         
+        <!--carousel open--> 
+        <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="css/img/truck1.jpg" style="width:100%">
+  <div class="text">Online Truck Booking Made Easy</div>
+      <p class="sliderpara">Truck Loader - India’s most reliable, dedicated and expert online Transport logistics services partner!</P>
+
+</div>
+
+<div class="mySlides fade">
+  <img src="css/img/highway.jpg" style="width:100%">
+  <div class="text">Full Load Services</div>
+    <p class="sliderpara">We provide Full Truck load transportation services with varied type of trucks available with the click of a button.</P>
+
+</div>
+
+<div class="mySlides fade">
+  <img src="css/img/truck.jpg" style="width:100%">
+  <div class="text">Advance Booking</div>
+  <p class="sliderpara">Our vehicle availability is guaranteed on daily/weekly/monthly basis to ensure on-time reporting.</P>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center" style="padding-top : 40px;">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+  <!--carousel close--> 
+
+<!--marquee open--> 
+<marquee width="100%" direction="left" style="padding: 20px 20px; background-color: #8B0000; color: #fff; font-weight: bold; letter-spacing: 1px;">
+"Note : please book Truck Online for All India Service"
+</marquee> 
+   <!--marquee close--> 
+        
+        <!--about open-->
+        <div class="aboutouter">
+            <div class="leftcontainer">
+                <h1>About Us</h1>
+                <p>Truck Loader is one of the foremost trucking companies, delivering the plethora of transport services to its esteemed consumers across India. We are the “best-in-class and cost-effective transporter” as defined by our customers and serving this industry for many years.
+
+We have set high standards in every facet of transportation, and strive to keep raising the bar. With our extensive industry knowledge and skilled team, you can completely focus on your core interests whereas leaving the tiring and complex moving process on us.
+Time-critical? No worries – Truck Loader will help you!</p>
+            </div>
+            <div class="rightcontainer"><img src="css/img/truck.jpg" style="width:100%; height: 300px;border-radius: 35px;"></div>
+             </div>
+        <!--about close-->
+        
+        <!--info open-->
+        <div class="infodata">
+            <h1>Truck Loader – India’s most reliable, dedicated and expert online Transport logistics services partner!</h1>
+            <p>Our company is equipped with advanced equipment, modern tools, and expertise that enable us to help our consumers with crucial transportation and supply chain solutions. We ensure businesses that they will get excellent-quality, prompt, and secure transportation services irrespective of time-constraint, the heavy load issue, and any other related problem.</p>
+            <p>Being the prime logistics services provider, we believe that people, technology, infrastructure and expertise all work together to help businesses to succeed and henceforth, we are offering the right blend of all these.</p>
+            <p>We are a customer-centric firm and our every action is aimed to offer ease and comfort to them when it comes to booking a truck. Our online truck booking app has tremendously simplified the process of booking a truck. Whether you are looking for the companies of online truck booking Hyderabad or online truck booking Mumbai, TruckGuru would always be your right choice.</p>
+        </div>
+        <!--info close-->
+        
+        <!--banner open-->
+        <!--<div class="bannerouter">
+            <h1 class="bannertext">Welcome To </br> World Of Planet</h1>
+            <p class="bannertagline">No earth, no birth! If you want a happy life, save the earth.</P>
+        </div>-->
+        <!--banner close-->
+        
+        <!--testimonial open-->
+        <div class="testimonialouter">
+            <h1>What Our Customer Say's</h1>
+            <div class="testimonialleft">
+                <p>Thanks to Truck Loader, booking a truck for moving our goods across cities has become completely hassle free. With their online booking system, getting a truck on demand has become a smooth procedure, and you also get access to the rates instantly. We highly recommend them for their efficient and trustworthy customer service.</p>
+                <h5>MillIndia</h5>
+            </div>
+            <div class="testimonialright">
+                <p>Great team, prompt, responsive & well organized. Truck Loader has done an excellent job of transporting all our goods to a Pan India location in a safe & timely manner. The Team has completely pulled together to make our moving experience smooth & hassle free. We have been most impressed by their online truck booking.</p>
+                <h5>CargoIndia</h5>
+            </div>
+        </div>
+        <!--testimonial close-->
+        
+        <!--footer open-->
+        <div class="footerouter">
+            <p>Truck Loader. All Right Reserved | Design & Managed By TrukLoader</p>
+        </div>
+        <!--footer close-->
+
+        
+        
+        
+   <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>     
+ <script>
+            var CurrentPosition = 0;
+
+function over(ev) {
+    let style = ev.srcElement
+    let OldPosition = CurrentPosition;
+    CurrentPosition = ev.clientX
+    if (OldPosition < CurrentPosition) {
+        style.classList.add("right")
+        style.classList.remove("left")
+    } else if (OldPosition > CurrentPosition) {
+        style.classList.add("left")
+        style.classList.remove("right")
+    }
+}
+function out(ev) {
+    let style = ev.srcElement
+    let OldPosition = CurrentPosition;
+    if (OldPosition < ev.clientX) {
+        style.classList.add("right")
+        style.classList.remove("left")
+    } else if (OldPosition > ev.clientX) {
+        style.classList.add("left")
+        style.classList.remove("right")
+    }
+}
+
+for (let i = 0; i < document.getElementsByTagName('li').length; i++) {
+    document.getElementsByTagName('li')[i].addEventListener("mouseover", over);
+    document.getElementsByTagName('li')[i].addEventListener("mouseout", out);
+}
+            </script>
+    </body>
+</html>
